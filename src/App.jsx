@@ -4,7 +4,7 @@ import Canva from './Desenho/Canva.jsx';
 function App(){
     return(
         <div>
-            <h1> Olas festival em react </h1>
+            <h1> Olas festival2 em react </h1>
 
         </div>
     );
