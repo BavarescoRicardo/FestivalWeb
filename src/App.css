@@ -1,0 +1,11 @@
+.Body
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 42;
+    display: flex;
+    background-color: cornflowerblue;
+    color: cornflowerblue;
+    border: cyan;
+    border-radius: 40%;
+
+}
