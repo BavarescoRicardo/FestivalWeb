@@ -13,7 +13,7 @@ function App(){
         setEdicao (edicao + 1);
     }
     const Logar = () => {        
-        setLogado((logado) => true);
+        setLogado((logado) => !logado);
     }
     function RetornarTela () {
         return (
@@ -39,7 +39,7 @@ function App(){
             <h3>{logado == false ? <Evento nomeEvento="Logado"/> : <Evento nomeEvento="nao logado"/>}</h3> 
                 <b> Fazer condição para trocar tela </b>
                 {RetornarTela}
-                <button type="submit" onClick={Logar}> Teste Print</button>
+                <button type="button" onClick={Logar}> Teste Print</button>
             </form>    
             
         </div>
