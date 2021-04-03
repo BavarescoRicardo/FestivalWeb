@@ -14,7 +14,7 @@ function Login(props){
     }
 
     return(
-        <div>
+        <div className="DivLogin">
             <h2>
                 {props.nome}                             
             </h2>

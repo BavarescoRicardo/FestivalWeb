@@ -1,5 +1,5 @@
 import react, {useEffect, useState} from 'react';
-import style from './App.css'
+import './App.css'
 import Canva from './Desenho/Canva.jsx';
 import BotaoT from './Componentes/BotaoTeste';
 import Evento from './Componentes/Eventos';
@@ -36,7 +36,7 @@ function App(){
             <button onClick={incrementar}> Aumentar</button>           
 
             <form className='formulario'>                
-            <h3>{logado == false ? <Evento nomeEvento="Logado"/> : <Evento nomeEvento="nao logado"/>}</h3> 
+            <h3>{logado == true ? <Evento nomeEvento="Logado"/> : <Login nome="Usuario"/>}</h3> 
                 <b> Fazer condição para trocar tela </b>
                 {RetornarTela}
                 <button type="button" onClick={Logar}> Teste Print</button>

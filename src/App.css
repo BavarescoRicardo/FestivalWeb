@@ -9,3 +9,14 @@
     border-radius: 40%;
 
 }
+.Formulario
+{
+
+    font-family: 'Franklin Gothic Medium';
+    font-size: 32;
+    display: flex;
+    background-color: blanchedalmond;
+    color: cornflowerblue;
+    border: cyan;
+    border-radius: 40%;
+}
