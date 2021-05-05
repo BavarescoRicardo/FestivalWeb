@@ -23,9 +23,7 @@ function App(){
                {logado == true? <Evento/> :'Nada acontece'}
             </div>
         );
-    }
-
-    
+    }   
 
 
     return(      
@@ -36,16 +34,12 @@ function App(){
                 <Navegacao /> 
                 <Route path="/Sobre" component={Sobre} />            
                 <Route path="/Evento" component={Evento} />
+                <Route path="/Canva" component={Canva} />
             </Router>
 
             {/* <Canva nomeDesenho="Quadrado"/>
             <h1> {edicao} </h1>
             <button onClick={incrementar}> Aumentar</button>           
-            <Link to="/dashboard">
-                <Button style={myStyle}>
-                    <p>Click Me!</p>
-                </Button>
-            </Link>
             <form className='formulario'>                
             <h3>{logado == true ? <Evento nomeEvento="Logado"/> : <Login nome="Usuario"/>}</h3> 
                 <b> Fazer condição para trocar tela </b>
