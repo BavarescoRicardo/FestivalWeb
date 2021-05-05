@@ -1,0 +1,18 @@
+/* body { 
+    background: #dddddd; 
+}
+
+h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, sans-serif;
+} */
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    background: white;
+    border: 2px inset red;
+}

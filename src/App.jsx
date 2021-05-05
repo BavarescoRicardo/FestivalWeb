@@ -1,9 +1,11 @@
 import react, {useEffect, useState} from 'react';
 import './App.css'
 import Canva from './Desenho/Canva.jsx';
-import BotaoT from './Componentes/BotaoTeste';
+import Sobre from './Componentes/Sobre';
 import Evento from './Componentes/Eventos';
 import Login from './Componentes/Login';
+import Navegacao from './Componentes/Nav';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App(){
 
@@ -29,18 +31,28 @@ function App(){
     return(      
         <div>            
             <h1> Olar festival em react </h1>
-            <Evento nomeEvento="FIMUSIC"/>
-            <Evento nomeEvento="GAITAÇO"/>
+            <Router>
+                <Route path="/Login" component={Login} />
+                <Navegacao /> 
+                <Route path="/Sobre" component={Sobre} />            
+                <Route path="/Evento" component={Evento} />
+            </Router>
 
+            {/* <Canva nomeDesenho="Quadrado"/>
             <h1> {edicao} </h1>
             <button onClick={incrementar}> Aumentar</button>           
-
+            <Link to="/dashboard">
+                <Button style={myStyle}>
+                    <p>Click Me!</p>
+                </Button>
+            </Link>
             <form className='formulario'>                
             <h3>{logado == true ? <Evento nomeEvento="Logado"/> : <Login nome="Usuario"/>}</h3> 
                 <b> Fazer condição para trocar tela </b>
                 {RetornarTela}
                 <button type="button" onClick={Logar}> Teste Print</button>
-            </form>    
+            </form>
+            */}
             
         </div>
     );
