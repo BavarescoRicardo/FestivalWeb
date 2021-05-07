@@ -10,13 +10,17 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 function App(){
 
     const [edicao, setEdicao]  = useState(1);
-    const [logado, setLogado]  = useState(false);
+    const [logado, setLogado]  = useState(false);    
     const incrementar = () => {
         setEdicao (edicao + 1);
     }
     const Logar = () => {        
         setLogado((logado) => !logado);
     }
+    const estilo = {
+        color: 'darkgray'
+    };
+
     function RetornarTela () {
         return (
             <div>
@@ -28,10 +32,10 @@ function App(){
 
     return(      
         <div>            
-            <h1> Olar festival em react </h1>
+            <h1 style={estilo}> Olar festival em react </h1>
             <Router>
                 <Route path="/Login" component={Login} />
-                <Navegacao /> 
+                <Navegacao  /> 
                 <Route path="/Sobre" component={Sobre} />            
                 <Route path="/Evento" component={Evento} />
                 <Route path="/Canva" component={Canva} />

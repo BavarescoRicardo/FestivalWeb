@@ -11,11 +11,10 @@ nav{
 }
 
 .Sobremim {
-    height: 250px;
+    height: 124px;
     width: 400px;
     background-color: rgb(126, 154, 163);
     border: 3px solida white;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: baseline;
 }
