@@ -1,6 +1,6 @@
 nav{
     display: flex;    
-    justify-content: center;
+    justify-content: center;    
     min-height: 10ch;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 22;    
@@ -11,8 +11,8 @@ nav{
 }
 
 .Sobremim {
-    height: 124px;
-    width: 400px;
+    height: 158px;
+    width: 600px;
     background-color: rgb(126, 154, 163);
     border: 3px solida white;
     flex-direction: column;

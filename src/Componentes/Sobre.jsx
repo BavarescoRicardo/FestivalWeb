@@ -11,7 +11,8 @@ function Sobre(){
     const pegarProjetos = async () => 
     {
         // link que criei para request no servidor
-        const dados = await fetch('https://api.github.com/users/Valhala23/repos?');
+        const dados = await fetch('https://192.168.0.106:5001/Weatherforecast');
+        // const dados = await fetch('https://api.github.com/users/Valhala23/repos?');
         const itens = await dados.json();
         console.log(itens);
         setItens(itens);
@@ -22,17 +23,19 @@ function Sobre(){
     return(
         <div className="Sobremim">
             <h4> 
-                Sobremim:
-                Ricardo Bavaresco
-                1997
+                <p>
+                Sobremim:<br/>
+                Ricardo Bavaresco<br/>
+                1997<br/>
 
-                Lista de repositorios
-                github: https://github.com/Valhala23/
-                <div className="ListaProjetos">
+                Lista de repositorios<b/>
+                github: https://github.com/Valhala23/<br/><br/>
+                </p>
+                 <div className="ListaProjetos">
                     {itens.map(item => (
-                        <h5>{item.name}</h5>
+                        <h5>{item.summary}</h5>
                     ))}
-                </div>
+                </div> 
             </h4>
         </div>
     );    
