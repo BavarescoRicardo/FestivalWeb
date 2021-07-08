@@ -4,8 +4,11 @@ import Canva from './Desenho/Canva.jsx';
 import Sobre from './Componentes/Sobre';
 import Evento from './Componentes/Eventos';
 import Login from './Componentes/Login';
+import Usuarios from './Componentes/Usuarios';
 import Navegacao from './Componentes/Nav';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+
 
 function App(){
 
@@ -39,18 +42,18 @@ function App(){
                 <Route path="/Sobre" component={Sobre} />            
                 <Route path="/Evento" component={Evento} />
                 <Route path="/Canva" component={Canva} />
+                <Route path="/Usuarios" component={Usuarios} />
             </Router>
 
-            {/* <Canva nomeDesenho="Quadrado"/>
-            <h1> {edicao} </h1>
+
+            {/* <h1> {edicao} </h1>
             <button onClick={incrementar}> Aumentar</button>           
             <form className='formulario'>                
             <h3>{logado == true ? <Evento nomeEvento="Logado"/> : <Login nome="Usuario"/>}</h3> 
                 <b> Fazer condição para trocar tela </b>
                 {RetornarTela}
                 <button type="button" onClick={Logar}> Teste Print</button>
-            </form>
-            */}
+            </form> */}
             
         </div>
     );

@@ -21,6 +21,10 @@ function Navegacao(){
                     <ul>Desenho</ul>
                 </Link>
 
+                <Link to='/Usuarios'>
+                    <ul>Crud usuarios</ul>
+                </Link>
+
             </h3>
         </nav>
     );    
